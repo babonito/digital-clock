@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+  "title":"PhpAssist | Digital Clock"
+})
+<body>
+@@include('html/header.html', {})
+<main class="container">
+	<h1>Digital Clock</h1>
+	<div class="digital-clock">
+		<div class="circle" style="--clr: #ff2972;">
+			<div class="dots h_dot"></div>
+			<svg>
+				<circle r="70" cx="70" cy="70"></circle>
+				<circle id="hh" r="70" cx="70" cy="70"></circle>
+			</svg>
+			<div id="hours">00</div>
+		</div>
+		<div class="circle" style="--clr: #fee800;">
+			<div class="dots m_dot"></div>
+			<svg>
+				<circle r="70" cx="70" cy="70"></circle>
+				<circle id="mm" r="70" cx="70" cy="70"></circle>
+			</svg>
+			<div id="minutes">00</div>
+		</div>
+		<div class="circle" style="--clr: #04fc43;">
+			<div class="dots s_dot"></div>
+			<svg>
+				<circle r="70" cx="70" cy="70"></circle>
+				<circle id="ss" r="70" cx="70" cy="70"></circle>
+			</svg>
+			<div id="seconds">00</div>
+		</div>
+	</div>
+</main>
+@@include('html/footer.html', {})
+<script src="js/app.min.js"></script>
+</body>
+</html>

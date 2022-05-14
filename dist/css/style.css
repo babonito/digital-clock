@@ -1,0 +1,243 @@
+@font-face {
+  font-family: fa;
+  font-display: swap;
+  src: url("../fonts/fa-light.woff2") format("woff2"), url("../fonts/fa-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: fa;
+  font-display: swap;
+  src: url("../fonts/fa-regular.woff2") format("woff2"), url("../fonts/fa-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: fa;
+  font-display: swap;
+  src: url("../fonts/fa-solid.woff2") format("woff2"), url("../fonts/fa-solid.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-MediumItalic.woff2") format("woff2"), url("../fonts/Gilroy-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.digital-clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30rem;
+  background: #2f363e;
+  gap: 40px;
+  color: #fff;
+}
+
+.digital-clock .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.digital-clock .circle svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.digital-clock .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: #191919;
+  stroke-width: 4;
+  -webkit-transform: translate(5px, 5px);
+      -ms-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+.digital-clock .circle svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+}
+
+.digital-clock div {
+  position: absolute;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.digital-clock div span {
+  display: block;
+  position: absolute;
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.digital-clock .dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.digital-clock .dots:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background: var(--clr);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+          box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
